@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Reservaciones</h1>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria.html">Categoria</a></li>
+        <li><a href="tool.html">Tool</a></li>
+        <li><a href="cliente.html">Cliente</a></li>
+        <li><a href="mensajes.html">Mensajes</a></li>
+    </ul>
+
+    <label for="">Elija la fecha de inicio de la reserva</label>
+    <input type="date" id="startDate">
+    <br>
+    <label for="">Elija la fecha de finalización de la reserva</label>
+    <input type="date" id="devolutionDate">
+    <br>
+
+    <label for="">Estatus de su reserva:</label>
+    <select id="status">
+        <option value="completed">Completada</option>
+        <option value="cancelled">Cancelada</option>
+    </select>
+
+    <!---->
+    <label for="">Escoja el cliente</label>
+    <select id="select-client"></select>
+
+    <label for="">Escoja la herramienta</label>
+    <select id="select-tool"></select>
+
+    <!---->
+    <script type="text/javascript">
+        window.onload = getTool_Reservaciones();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = getClient_Reservaciones();
+    </script>
+
+</body>
+
+</html>
